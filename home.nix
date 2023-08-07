@@ -41,6 +41,8 @@
 
     brave
     bluetuith
+    pavucontrol
+    spotifywm
 
     lazygit
     fd
@@ -112,6 +114,13 @@
 
     eww-wayland
   ];
+
+  xdg.desktopEntries.spotifywm = {
+    name = "Spotify WM";
+    exec = "spotifywm";
+    terminal = false;
+    type = "Application";
+  };
 
   # https://nixos.wiki/wiki/Visual_Studio_Code
   programs.vscode = {
